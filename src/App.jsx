@@ -1,33 +1,32 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import StarReviewBox from './StarReviewBox/StarReviewBox'
+import WordReviewBox from './WordReviewBox/WordReviewBox'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <head>
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"></link>
+    </head>
+    
+      <div className="flex ">
+        <div>
+          <h1>10,000+ of our users love our products.</h1>
+          <p>We only provide great products combined with excellent customer service. See what satisfied customers are saying about our service.</p>
+        </div>
+        <div>
+          <StarReviewBox stars="4"/>
+          <StarReviewBox stars="2"/>
+          <StarReviewBox stars="1"/>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div className="text-reviews flex justify-evenly mt-[300px]">
+        <WordReviewBox/>
+        <WordReviewBox/>
+        <WordReviewBox/>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
