@@ -3,7 +3,7 @@ import './style.css'
 const StarReviewBox = ({stars, stagger, name}) => {
 
     let stag = `ml-${stagger}`
-    let cl = "px-8 text-yellow-400 bg-purple-400 p-[10px] flex justify-between mb-[10px] w-[450px] " + stag 
+    let cl = "rounded px-8 text-yellow-400 bg-purple-400 p-[10px] flex justify-between mb-[10px] w-[450px] " + stag 
     
     var starDisplay = [];
 

@@ -3,7 +3,7 @@ import './style.css'
 const WordReviewBox = ({name, words, stagger}) => {
 
     let stag = ` mb-${stagger}`;
-    let cl = "bg-purple-600 p-[20px] w-[350px] flex flex-col text-white" + stag;
+    let cl = "rounded bg-purple-600 p-[20px] w-[350px] flex flex-col text-white" + stag;
 
     return(
         <div className={cl}>
